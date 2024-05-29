@@ -19,7 +19,6 @@ module.exports.signIn = async (req, res) => {
       Email: Email,
       Password: Password,
     });
-    console.log("Checking the user ====>", user);
     if (user) {
       return res.status(200).json({
         message: "Login Successfully",
